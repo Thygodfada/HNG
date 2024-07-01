@@ -1,0 +1,18 @@
+{
+    {
+        "version": 2,
+        "builds": [
+            {
+                "src": "BasicWebServer.csproj",
+                "use": "@vercel/dotnet"
+            }
+        ],
+        "routes": [
+            {
+                "src": "/(.*)",
+                "dest": "BasicWebServer.csproj"
+            }
+        ]
+    }
+
+}
