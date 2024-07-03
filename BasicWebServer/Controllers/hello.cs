@@ -5,12 +5,12 @@ namespace BasicWebServer.Controllers
 {
 	[Route("api/[controller]")]
 	[ApiController]
-	public class ErnestServer : ControllerBase
+	public class hello : ControllerBase
 	{
 		private readonly IHttpClientFactory _httpClientFactory;
-		private readonly ILogger<ErnestServer> _logger;
+		private readonly ILogger<hello> _logger;
 
-		public ErnestServer(IHttpClientFactory httpClient, ILogger<ErnestServer> logger)
+		public hello(IHttpClientFactory httpClient, ILogger<hello> logger)
 		{
 			_httpClientFactory = httpClient;
 			_logger = logger;
